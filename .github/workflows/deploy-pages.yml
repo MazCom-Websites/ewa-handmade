@@ -78,6 +78,7 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://${{ vars.SITE_DOMAIN }}${{ vars.PAGES_BASE_PATH }}
           NEXT_PUBLIC_FORM_API_URL: ${{ vars.FORM_API_URL }}
+          NEXT_PUBLIC_TENANT_SLUG: ${{ vars.TENANT_SLUG }}
           # Analytics (GA4/Hotjar/PostHog) comes ONLY from config/site.json — never env.
           CONTENT_ENCRYPTION_KEY: ${{ secrets.CONTENT_ENCRYPTION_KEY }}
           AUTH0_DOMAIN: dummy.auth0.com
